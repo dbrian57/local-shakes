@@ -11,10 +11,10 @@ Because the USGS often updates earthquakes with new information and the API pres
 ## Getting Started
 
 ### Prerequistites
-• `npm node` installed on your local machine or server.
-• `nodemon` installed on your local machine for local testing.
-• An active Twilio account with a service and assigned outgoing phone number message service ID. You can create a Twilio and set up a service with a phone number and message service ID in a few minutes.
-• The latitude and longitude of the location you would like to monitor for earthquakes. You can find these coordinates using [Maps.ie](https://www.maps.ie/coordinates.html).
+* `npm node` installed on your local machine or server.
+* `nodemon` installed on your local machine for local testing.
+* An active Twilio account with a service and assigned outgoing phone number message service ID. You can create a Twilio and set up a service with a phone number and message service ID in a few minutes.
+* The latitude and longitude of the location you would like to monitor for earthquakes. You can find these coordinates using [Maps.ie](https://www.maps.ie/coordinates.html).
 
 ### Installation and Running
 
