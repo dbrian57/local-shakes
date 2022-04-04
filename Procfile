@@ -1,1 +1,1 @@
-web: node src/index.cjs
+worker: node src/index.cjs
