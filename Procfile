@@ -1,1 +1,1 @@
-web: nodemon src/index.cjs
+web: node src/index.cjs

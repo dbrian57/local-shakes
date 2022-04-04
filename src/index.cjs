@@ -18,6 +18,8 @@ let sendText = (message) => {
    .then(message => console.log(message.sid));
    };
 
+sendText('Local Shakes is running');
+
 // Your location to monitor configuration
 const yourLatitude = '35.9477244';
 const yourLongitude = '-117.9020186';
