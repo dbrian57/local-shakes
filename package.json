@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "forever": "^4.0.3",
+    "twilio": "^3.76.0"
+  }
+}
