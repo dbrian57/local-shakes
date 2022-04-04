@@ -1,1 +1,1 @@
-worker: node src/index.cjs
+release: node src/index.cjs
