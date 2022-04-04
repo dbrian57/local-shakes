@@ -20,11 +20,21 @@ let sendText = (message) => {
 
 sendText('Local Shakes is running');
 
-// Your location to monitor configuration
-const yourLatitude = '35.9477244';
-const yourLongitude = '-117.9020186';
+// Configure the location to monitor
+const yourLatitude = '43.014381';
+const yourLongitude = '-71.676826';
 const yourTimezone = '-05:00';
-const radius = 600;
+const radius = 100; //in kilometers
+
+/*
+For testing purposes, you can use the following coordinates to monitor a 600km radius of the 
+southwestern United States. The app will usually pick up a new earthquake every three to ten 
+minutes.
+
+Latitude: 35.9477244
+Longitude: -117.9020186
+Radius: 600
+*/
 
 // Storage or recent quakes
 let recentQuakes = [];
