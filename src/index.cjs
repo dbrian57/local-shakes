@@ -22,7 +22,7 @@ sendText('Local Shakes is running');
 
 // Configure the location to monitor
 const yourLatitude = '43.209572';
-const yourLongitude = '-71.537292';
+const yourLongitude = '-71.676826';
 const yourTimezone = '-05:00';
 const radius = 100; //in kilometers
 
