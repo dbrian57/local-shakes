@@ -8,17 +8,20 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-let sendText = (message) => {
-   client.messages
-   .create({
-      body: message,
-      messagingServiceSid: process.env.MESSAGING_SERVICE_ID,
-      to: `+${process.env.PHONE_NUMBER_TO_TEXT}`
-      })
-   .then(message => console.log(message.sid));
-   };
+const phoneArray = process.env.PHONE_NUMBER_TO_TEXT.split(',');
 
-sendText('Local Shakes is running');
+let sendText = (message) => {
+   phoneArray.forEach(phoneNumber => {
+      client.messages
+      .create({
+         body: message,
+         messagingServiceSid: process.env.MESSAGING_SERVICE_ID,
+         to: phoneNumber
+         })
+      .then(message => console.log(message.sid));
+   } )
+
+sendText('Local Shakes has been deployed for this phone number.');
 
 // Configure the location to monitor
 const yourLatitude = '43.209572';
