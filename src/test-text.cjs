@@ -13,7 +13,6 @@ const client = require('twilio')(accountSid, authToken);
 const message = 'This text message is a test from Local Shakes.';
 
 const phoneArray = process.env.PHONE_NUMBER_TO_TEXT.split(',');
-console.log(phoneArray);
 
 let sendText = (message) => {
    phoneArray.forEach(phoneNumber => {
