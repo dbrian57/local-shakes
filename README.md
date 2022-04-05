@@ -50,7 +50,7 @@ The app runs on your local machine and checks for new earthquakes in the defined
 ### Deploying the App to the Cloud
 You can deploy this app on a service like [DigitalOcean's App Platform](https://docs.digitalocean.com/products/app-platform/how-to/create-apps) or [Heroku](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment).
 
-When you deploy the app on a cloud service, you need to add the app's environment variables (the ones in the `.env` file) to the service you deploy on. Review your service's preferred documentation to see how this is done.
+When you deploy the app on a cloud service, you need to add the app's environment variables (the ones in the `.env` file) to the service you deploy on. Review your service's documentation to see how this is done.
 
 ## Licensing
 Local Shakes is licensed under Creative Commons. You can do whatever you want with it.
