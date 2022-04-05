@@ -20,8 +20,9 @@ let sendText = (message) => {
          })
       .then(message => console.log(message.sid));
    } )
+  };
 
-sendText('Local Shakes has been deployed for this phone number.');
+sendText('Local Shakes has been deployed for this phone number');
 
 // Configure the location to monitor
 const yourLatitude = '43.209572';
