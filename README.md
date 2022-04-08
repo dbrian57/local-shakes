@@ -39,10 +39,10 @@ After adding your Twilio crendentials to the `.env` file, open the `src/index.cj
 
 The `yourTimezone` variable defines your UTC offsets. The offsets for EST, CST, MST, and PST are `-05:00`, `-06:00`, `-07:00`, and `-08:00`, respectively. These values may be different depending on your region's use of Daylight Savings Time.
 
-Save the changes to the file and run the app with `nodemon` or something equivalent:
+Save the changes to the file and run the app with `node`:
 
 ```
-nodemon src/index.cjs
+node src/index.cjs
 ```
 
 The app runs on your local machine and checks for new earthquakes in the defined location every 60 seconds.
@@ -51,6 +51,10 @@ The app runs on your local machine and checks for new earthquakes in the defined
 You can deploy this app on a service like [DigitalOcean's App Platform](https://docs.digitalocean.com/products/app-platform/how-to/create-apps) or [Heroku](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment).
 
 When you deploy the app on a cloud service, you need to add the app's environment variables (the ones in the `.env` file) to the service you deploy on. Review your service's documentation to see how this is done.
+
+If you are deploying this on a Linux virtual machine (VM), such as a DigitalOcean Droplet, you can install this tool using the same steps above. To keep the script running in perpetuity on the VM, run the `screen` command to create virtual terminal for the script and then run the script normally with `node src/index.cjs`. `screen` allows you to disconnect from the VM without stopping the script.
+
+When you reconnect to the VM, you can open the virtual terminal the script is running in by running `screen -r`.
 
 ## Licensing
 Local Shakes is licensed under Creative Commons. You can do whatever you want with it.
